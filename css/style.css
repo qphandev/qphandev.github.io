@@ -413,7 +413,7 @@ p {
   padding: 1em;
 }
 .qCard__body h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .qCard__body p {
   font-size: 1rem;
@@ -462,8 +462,32 @@ p {
   font-size: 1.5rem;
   color: grey;
 }
+.project-page__header-image {
+  max-width: 90%;
+  margin: 1rem 0;
+}
 .project-page__body {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+@media (max-width: 650px) {
+  .project-page__body {
+    width: 95%;
+  }
+}
+.project-page__body-container {
   margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project-page__large-image {
+  color: grey;
+}
+.project-page__large-image img {
+  max-width: 100%;
+  margin-bottom: 0.5rem;
 }
 
 .working-cards-container {
@@ -550,4 +574,12 @@ footer {
   padding: 1em;
   background-color: #417ee8;
   color: white;
+}
+
+#profile-picture {
+  width: 10rem;
+}
+
+.w-10 {
+  width: 10% !important;
 }

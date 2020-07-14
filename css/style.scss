@@ -89,7 +89,7 @@ $dark-gray: #484848;
   &__body {
     padding: 1em;
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
     p {
       font-size: 1rem;
@@ -145,8 +145,33 @@ $dark-gray: #484848;
     
   }
 
+  &__header-image {
+    max-width: 90%;
+    margin: 1rem 0;
+  }
+
   &__body {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 3rem;
+
+    @include mQ(650px) {
+      width: 95%;
+    }
+  }
+  &__body-container {
     margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__large-image {
+    color: grey;
+    img {
+      max-width: 100%;
+      margin-bottom: .5rem;
+    }
   }
 }
 
@@ -194,8 +219,6 @@ $dark-gray: #484848;
       height: 100%;
       object-fit: cover;
     }
-
-
   }
 
   &__body {
@@ -236,4 +259,11 @@ footer {
   background-color: $primary-color;
   color: white;
 }
+#profile-picture {
+  width: 10rem;
+}
 
+// WIDTH
+.w-10 {
+  width: 10%!important;
+}
