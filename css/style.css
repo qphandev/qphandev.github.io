@@ -470,10 +470,12 @@ p {
   width: 70%;
   margin: auto;
   margin-bottom: 3rem;
+  background-color: #f3f3f3;
+  padding: 1rem;
 }
 @media (max-width: 650px) {
   .project-page__body {
-    width: 95%;
+    width: 100%;
   }
 }
 .project-page__body-container {
@@ -484,10 +486,17 @@ p {
 }
 .project-page__large-image {
   color: grey;
+  max-width: 80%;
+  margin: auto;
 }
 .project-page__large-image img {
   max-width: 100%;
   margin-bottom: 0.5rem;
+}
+@media (max-width: 650px) {
+  .project-page__large-image {
+    max-width: 95%;
+  }
 }
 
 .working-cards-container {

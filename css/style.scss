@@ -142,7 +142,6 @@ $dark-gray: #484848;
       font-size: 1.5rem;
       color: grey;
     }
-    
   }
 
   &__header-image {
@@ -154,9 +153,11 @@ $dark-gray: #484848;
     width: 70%;
     margin: auto;
     margin-bottom: 3rem;
+    background-color: $light-gray;
+    padding: 1rem;
 
     @include mQ(650px) {
-      width: 95%;
+      width: 100%;
     }
   }
   &__body-container {
@@ -168,9 +169,15 @@ $dark-gray: #484848;
 
   &__large-image {
     color: grey;
+    max-width: 80%;
+    margin: auto;
     img {
       max-width: 100%;
       margin-bottom: .5rem;
+    }
+
+    @include mQ(650px) {
+      max-width: 95%;
     }
   }
 }
