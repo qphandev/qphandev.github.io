@@ -37,6 +37,13 @@ $dark-gray: #484848;
     }
   }
 
+  a {
+    color: white;
+  }
+  a:hover {
+    color: $secondary-color;
+  }
+
   &__image-container {
     display: flex;
     justify-content: center;
@@ -189,7 +196,7 @@ $dark-gray: #484848;
   align-items: center;
 }
 .working-card {
-  width: 35rem;
+  width: 45rem;
   height: 16rem;
   background-color: $primary-color;
   margin: 1rem;
@@ -198,17 +205,17 @@ $dark-gray: #484848;
 
   @include mQ(650px) {
     flex-direction: column;
-    height: 20rem;
+    height: 25rem;
     width: 25rem;
   }
 
   @include mQ(500px) {
-    height: 20rem;
+    height: 25rem;
     width: 20rem;
   }
 
   @include mQ(400px) {
-    height: 20rem;
+    height: 25rem;
     width: 15rem;
   }
 
@@ -258,6 +265,10 @@ $dark-gray: #484848;
       margin: 0;
     }
   }
+
+  li {
+    font-size: .8rem;
+  }
 }
 footer {
   display: flex;
@@ -266,11 +277,23 @@ footer {
   background-color: $primary-color;
   color: white;
 }
+
+// ABOUT ME
 #profile-picture {
   width: 10rem;
 }
 
+.small-image {
+  max-width: 20rem;
+}
+.medium-image {
+  max-width: 30rem;
+}
+
 // WIDTH
+.w-0 {
+  width: 0%!important;
+}
 .w-10 {
   width: 10%!important;
 }

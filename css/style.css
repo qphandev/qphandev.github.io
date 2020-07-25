@@ -366,6 +366,12 @@ p {
 .qHeader__text > * {
   margin: 1rem 0;
 }
+.qHeader a {
+  color: white;
+}
+.qHeader a:hover {
+  color: #fdf777;
+}
 .qHeader__image-container {
   display: flex;
   justify-content: center;
@@ -506,7 +512,7 @@ p {
 }
 
 .working-card {
-  width: 35rem;
+  width: 45rem;
   height: 16rem;
   background-color: #417ee8;
   margin: 1rem;
@@ -515,19 +521,19 @@ p {
 @media (max-width: 650px) {
   .working-card {
     flex-direction: column;
-    height: 20rem;
+    height: 25rem;
     width: 25rem;
   }
 }
 @media (max-width: 500px) {
   .working-card {
-    height: 20rem;
+    height: 25rem;
     width: 20rem;
   }
 }
 @media (max-width: 400px) {
   .working-card {
-    height: 20rem;
+    height: 25rem;
     width: 15rem;
   }
 }
@@ -576,6 +582,9 @@ p {
   font-size: 1.5rem;
   margin: 0;
 }
+.working-card li {
+  font-size: 0.8rem;
+}
 
 footer {
   display: flex;
@@ -587,6 +596,18 @@ footer {
 
 #profile-picture {
   width: 10rem;
+}
+
+.small-image {
+  max-width: 20rem;
+}
+
+.medium-image {
+  max-width: 30rem;
+}
+
+.w-0 {
+  width: 0% !important;
 }
 
 .w-10 {
