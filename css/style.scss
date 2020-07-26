@@ -50,7 +50,6 @@ $dark-gray: #484848;
     padding: 1rem;
     img {
       max-width: 62%;
-      
     }
   }
 }
@@ -280,7 +279,7 @@ footer {
 
 // ABOUT ME
 #profile-picture {
-  width: 10rem;
+  width: 10em;
 }
 
 .small-image {
@@ -296,4 +295,9 @@ footer {
 }
 .w-10 {
   width: 10%!important;
+}
+
+// Fix the flex stretch
+img {
+  align-self: center;
 }

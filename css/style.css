@@ -595,7 +595,7 @@ footer {
 }
 
 #profile-picture {
-  width: 10rem;
+  width: 10em;
 }
 
 .small-image {
@@ -612,4 +612,8 @@ footer {
 
 .w-10 {
   width: 10% !important;
+}
+
+img {
+  align-self: center;
 }
