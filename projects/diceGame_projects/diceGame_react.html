@@ -41,7 +41,7 @@
                 <ul>
                     <li>Try to get all matching rolls to win(e.g. all die must be the same number face)</li>
                     <li>You only have three rolls</li>
-                    <li>You can lock any die so that its value doesn't change on your next roll (of course you can lock all of it and make me look like an idiot for allowing that)</li>
+                    <li>You can lock any die so that its value doesn't change on your next roll (of course you can lock all of it and make me look like a goof for allowing that)</li>
                 </ul>
                 <p>
                     It drove me kind of nuts when components didn't render after their props were updated along with all sorts of bugs in my code. My main struggle was merging my logic with its syntax and behavior that I knew little about.
@@ -51,6 +51,15 @@
                 </p>
                 <p>
                     Here's the source code for it on GitHub if you're interested to see: <a href="https://github.com/qphandev/dice_game">https://github.com/qphandev/dice_game</a>
+                </p>
+                <h3>Reflection</h3>
+                <p>
+                    Some things I'll have to keep in mind:
+                    <ul>
+                        <li>Simplify die component</li>
+                        <li>Die component should have roll method (App.js should be able to do die.roll())</li>
+                        <li>Shouldn't be able to re-render all die from onLockDie. Toggling locking die should have only that die rerendered.</li>
+                    </ul>
                 </p>
             </div>
         </div>
